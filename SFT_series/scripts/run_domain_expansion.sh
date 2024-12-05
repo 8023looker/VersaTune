@@ -13,7 +13,7 @@ DATASET_LIST=(
               ../../../dataset/code/codeAlpaca/code_alpaca_20k.json
             )
 # MODEL=../../../model/llama-3-8B/
-MODEL=../../../model/llama2-13b-hf/
+MODEL=../../../model/baichuan2-13b-hf/
 
 
 
@@ -27,7 +27,7 @@ do
 
         # CUDA_VISIBLE_DEVICES=0,1,2,3 \
         
-        torchrun --nproc_per_node=8 --master_port=4527 ../src/train_proxy_loss.py \
+        torchrun --nproc_per_node=8 --master_port=4527 ../src/domain_expansion/train_domain_expansion.py \
             --model_name_or_path $MODEL \
             --data_path $dataset \
             --bf16 True \
