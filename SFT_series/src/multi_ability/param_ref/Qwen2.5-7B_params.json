@@ -1,0 +1,11 @@
+{
+    "domain_weight": {
+        "law": 299,
+        "medical": 490,
+        "finance": 357,
+        "science": 738,
+        "code": 5006,
+        "other": 1968
+    },
+    "model_path": "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/model/Qwen2.5-7B/"
+}

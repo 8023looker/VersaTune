@@ -1,0 +1,593 @@
+2024-10-18 11:19:35,574 INFO    StreamThr :249937 [internal.py:wandb_internal():85] W&B internal server running at pid: 249937, started at: 2024-10-18 11:19:35.574202
+2024-10-18 11:19:35,576 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status
+2024-10-18 11:19:35,579 INFO    WriterThread:249937 [datastore.py:open_for_write():87] open: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/run-yt1cg4c2.wandb
+2024-10-18 11:19:35,580 DEBUG   SenderThread:249937 [sender.py:send():379] send: header
+2024-10-18 11:19:35,580 DEBUG   SenderThread:249937 [sender.py:send():379] send: run
+2024-10-18 11:19:36,961 INFO    SenderThread:249937 [dir_watcher.py:__init__():211] watching files in: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files
+2024-10-18 11:19:36,961 INFO    SenderThread:249937 [sender.py:_start_run_threads():1188] run started: yt1cg4c2 with start time 1729221575.576109
+2024-10-18 11:19:36,966 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: check_version
+2024-10-18 11:19:36,967 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: check_version
+2024-10-18 11:19:37,296 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: run_start
+2024-10-18 11:19:37,373 DEBUG   HandlerThread:249937 [system_info.py:__init__():26] System info init
+2024-10-18 11:19:37,373 DEBUG   HandlerThread:249937 [system_info.py:__init__():41] System info init done
+2024-10-18 11:19:37,373 INFO    HandlerThread:249937 [system_monitor.py:start():194] Starting system monitor
+2024-10-18 11:19:37,373 INFO    SystemMonitor:249937 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-18 11:19:37,374 INFO    HandlerThread:249937 [system_monitor.py:probe():214] Collecting system info
+2024-10-18 11:19:37,374 INFO    SystemMonitor:249937 [interfaces.py:start():188] Started cpu monitoring
+2024-10-18 11:19:37,374 INFO    SystemMonitor:249937 [interfaces.py:start():188] Started disk monitoring
+2024-10-18 11:19:37,375 INFO    SystemMonitor:249937 [interfaces.py:start():188] Started gpu monitoring
+2024-10-18 11:19:37,377 INFO    SystemMonitor:249937 [interfaces.py:start():188] Started memory monitoring
+2024-10-18 11:19:37,378 INFO    SystemMonitor:249937 [interfaces.py:start():188] Started network monitoring
+2024-10-18 11:19:37,441 DEBUG   HandlerThread:249937 [system_info.py:probe():152] Probing system
+2024-10-18 11:19:37,443 DEBUG   HandlerThread:249937 [gitlib.py:_init_repo():56] git repository is invalid
+2024-10-18 11:19:37,443 DEBUG   HandlerThread:249937 [system_info.py:probe():200] Probing system done
+2024-10-18 11:19:37,443 DEBUG   HandlerThread:249937 [system_monitor.py:probe():223] {'os': 'Linux-5.10.134-13.al8.x86_64-x86_64-with-glibc2.28', 'python': '3.10.14', 'heartbeatAt': '2024-10-18T03:19:37.441645', 'startedAt': '2024-10-18T03:19:35.567410', 'docker': None, 'cuda': None, 'args': ('--model_name_or_path', '../../../model/Sheared-LLaMA-2.7B/', '--data_path', '../../../dataset/law/Lawyer-Instruct/alpacmygavel.json', '--bf16', 'True', '--output_dir', '../output/proxy_alpacmygavel.json_2.7B', '--num_train_epochs', '100', '--per_device_train_batch_size', '8', '--per_device_eval_batch_size', '8', '--gradient_accumulation_steps', '16', '--eval_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '2000', '--save_total_limit', '1', '--learning_rate', '2e-5', '--weight_decay', '0.', '--warmup_ratio', '0.03', '--lr_scheduler_type', 'cosine', '--logging_steps', '1', '--fsdp', 'full_shard auto_wrap offload', '--fsdp_transformer_layer_cls_to_wrap', 'LlamaDecoderLayer', '--tf32', 'True', '--overwrite_output_dir', 'True', '--gradient_checkpointing', 'True'), 'state': 'running', 'program': '/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py', 'codePathLocal': None, 'host': 'bc-training-cluster01-gpu0121', 'username': 'root', 'executable': '/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/bin/python', 'cpu_count': 96, 'cpu_count_logical': 192, 'cpu_freq': {'current': 2981.5381874999985, 'min': 2600.0, 'max': 3100.0}, 'cpu_freq_per_core': [{'current': 3098.702, 'min': 2600.0, 'max': 3100.0}, {'current': 3060.464, 'min': 2600.0, 'max': 3100.0}, {'current': 3099.615, 'min': 2600.0, 'max': 3100.0}, {'current': 2948.385, 'min': 2600.0, 'max': 3100.0}, {'current': 2964.632, 'min': 2600.0, 'max': 3100.0}, {'current': 2766.72, 'min': 2600.0, 'max': 3100.0}, {'current': 2886.986, 'min': 2600.0, 'max': 3100.0}, {'current': 2901.821, 'min': 2600.0, 'max': 3100.0}, {'current': 2972.199, 'min': 2600.0, 'max': 3100.0}, {'current': 3049.253, 'min': 2600.0, 'max': 3100.0}, {'current': 2992.097, 'min': 2600.0, 'max': 3100.0}, {'current': 2918.183, 'min': 2600.0, 'max': 3100.0}, {'current': 2836.787, 'min': 2600.0, 'max': 3100.0}, {'current': 2820.309, 'min': 2600.0, 'max': 3100.0}, {'current': 2844.295, 'min': 2600.0, 'max': 3100.0}, {'current': 2822.853, 'min': 2600.0, 'max': 3100.0}, {'current': 3089.325, 'min': 2600.0, 'max': 3100.0}, {'current': 2800.398, 'min': 2600.0, 'max': 3100.0}, {'current': 2791.011, 'min': 2600.0, 'max': 3100.0}, {'current': 2996.426, 'min': 2600.0, 'max': 3100.0}, {'current': 3012.341, 'min': 2600.0, 'max': 3100.0}, {'current': 2882.179, 'min': 2600.0, 'max': 3100.0}, {'current': 3026.479, 'min': 2600.0, 'max': 3100.0}, {'current': 3099.485, 'min': 2600.0, 'max': 3100.0}, {'current': 2911.015, 'min': 2600.0, 'max': 3100.0}, {'current': 2825.255, 'min': 2600.0, 'max': 3100.0}, {'current': 3022.811, 'min': 2600.0, 'max': 3100.0}, {'current': 2913.525, 'min': 2600.0, 'max': 3100.0}, {'current': 2828.935, 'min': 2600.0, 'max': 3100.0}, {'current': 3019.096, 'min': 2600.0, 'max': 3100.0}, {'current': 2993.666, 'min': 2600.0, 'max': 3100.0}, {'current': 2928.596, 'min': 2600.0, 'max': 3100.0}, {'current': 2971.665, 'min': 2600.0, 'max': 3100.0}, {'current': 3051.342, 'min': 2600.0, 'max': 3100.0}, {'current': 3097.496, 'min': 2600.0, 'max': 3100.0}, {'current': 3006.127, 'min': 2600.0, 'max': 3100.0}, {'current': 2986.173, 'min': 2600.0, 'max': 3100.0}, {'current': 3084.242, 'min': 2600.0, 'max': 3100.0}, {'current': 2975.571, 'min': 2600.0, 'max': 3100.0}, {'current': 3034.375, 'min': 2600.0, 'max': 3100.0}, {'current': 2950.748, 'min': 2600.0, 'max': 3100.0}, {'current': 2951.412, 'min': 2600.0, 'max': 3100.0}, {'current': 2927.942, 'min': 2600.0, 'max': 3100.0}, {'current': 2790.911, 'min': 2600.0, 'max': 3100.0}, {'current': 2929.071, 'min': 2600.0, 'max': 3100.0}, {'current': 2982.224, 'min': 2600.0, 'max': 3100.0}, {'current': 3006.694, 'min': 2600.0, 'max': 3100.0}, {'current': 2981.711, 'min': 2600.0, 'max': 3100.0}, {'current': 3077.869, 'min': 2600.0, 'max': 3100.0}, {'current': 2797.168, 'min': 2600.0, 'max': 3100.0}, {'current': 2725.589, 'min': 2600.0, 'max': 3100.0}, {'current': 2864.099, 'min': 2600.0, 'max': 3100.0}, {'current': 3099.743, 'min': 2600.0, 'max': 3100.0}, {'current': 2669.311, 'min': 2600.0, 'max': 3100.0}, {'current': 2806.782, 'min': 2600.0, 'max': 3100.0}, {'current': 2801.343, 'min': 2600.0, 'max': 3100.0}, {'current': 2785.038, 'min': 2600.0, 'max': 3100.0}, {'current': 2791.185, 'min': 2600.0, 'max': 3100.0}, {'current': 2737.789, 'min': 2600.0, 'max': 3100.0}, {'current': 2736.181, 'min': 2600.0, 'max': 3100.0}, {'current': 3100.0, 'min': 2600.0, 'max': 3100.0}, {'current': 2740.107, 'min': 2600.0, 'max': 3100.0}, {'current': 2696.825, 'min': 2600.0, 'max': 3100.0}, {'current': 2798.59, 'min': 2600.0, 'max': 3100.0}, {'current': 2703.898, 'min': 2600.0, 'max': 3100.0}, {'current': 2726.679, 'min': 2600.0, 'max': 3100.0}, {'current': 2738.434, 'min': 2600.0, 'max': 3100.0}, {'current': 2712.945, 'min': 2600.0, 'max': 3100.0}, {'current': 2722.851, 'min': 2600.0, 'max': 3100.0}, {'current': 2730.545, 'min': 2600.0, 'max': 3100.0}, {'current': 2782.995, 'min': 2600.0, 'max': 3100.0}, {'current': 2673.109, 'min': 2600.0, 'max': 3100.0}, {'current': 2781.897, 'min': 2600.0, 'max': 3100.0}, {'current': 3103.03, 'min': 2600.0, 'max': 3100.0}, {'current': 2910.445, 'min': 2600.0, 'max': 3100.0}, {'current': 2811.0, 'min': 2600.0, 'max': 3100.0}, {'current': 2816.133, 'min': 2600.0, 'max': 3100.0}, {'current': 2966.04, 'min': 2600.0, 'max': 3100.0}, {'current': 2991.485, 'min': 2600.0, 'max': 3100.0}, {'current': 2980.721, 'min': 2600.0, 'max': 3100.0}, {'current': 2720.772, 'min': 2600.0, 'max': 3100.0}, {'current': 2837.391, 'min': 2600.0, 'max': 3100.0}, {'current': 2796.818, 'min': 2600.0, 'max': 3100.0}, {'current': 2688.663, 'min': 2600.0, 'max': 3100.0}, {'current': 3100.0, 'min': 2600.0, 'max': 3100.0}, {'current': 2770.972, 'min': 2600.0, 'max': 3100.0}, {'current': 3062.166, 'min': 2600.0, 'max': 3100.0}, {'current': 3105.783, 'min': 2600.0, 'max': 3100.0}, {'current': 2795.53, 'min': 2600.0, 'max': 3100.0}, {'current': 2904.467, 'min': 2600.0, 'max': 3100.0}, {'current': 2717.267, 'min': 2600.0, 'max': 3100.0}, {'current': 2724.225, 'min': 2600.0, 'max': 3100.0}, {'current': 2976.604, 'min': 2600.0, 'max': 3100.0}, {'current': 2858.491, 'min': 2600.0, 'max': 3100.0}, {'current': 2755.592, 'min': 2600.0, 'max': 3100.0}, {'current': 2799.852, 'min': 2600.0, 'max': 3100.0}, {'current': 3097.36, 'min': 2600.0, 'max': 3100.0}, {'current': 2953.2, 'min': 2600.0, 'max': 3100.0}, {'current': 3099.866, 'min': 2600.0, 'max': 3100.0}, {'current': 2983.879, 'min': 2600.0, 'max': 3100.0}, {'current': 2975.57, 'min': 2600.0, 'max': 3100.0}, {'current': 3071.783, 'min': 2600.0, 'max': 3100.0}, {'current': 2984.014, 'min': 2600.0, 'max': 3100.0}, {'current': 2956.699, 'min': 2600.0, 'max': 3100.0}, {'current': 2977.632, 'min': 2600.0, 'max': 3100.0}, {'current': 3003.709, 'min': 2600.0, 'max': 3100.0}, {'current': 2988.506, 'min': 2600.0, 'max': 3100.0}, {'current': 2995.768, 'min': 2600.0, 'max': 3100.0}, {'current': 2930.63, 'min': 2600.0, 'max': 3100.0}, {'current': 2966.903, 'min': 2600.0, 'max': 3100.0}, {'current': 2972.288, 'min': 2600.0, 'max': 3100.0}, {'current': 2991.633, 'min': 2600.0, 'max': 3100.0}, {'current': 3016.451, 'min': 2600.0, 'max': 3100.0}, {'current': 2795.901, 'min': 2600.0, 'max': 3100.0}, {'current': 2866.474, 'min': 2600.0, 'max': 3100.0}, {'current': 2838.616, 'min': 2600.0, 'max': 3100.0}, {'current': 2961.556, 'min': 2600.0, 'max': 3100.0}, {'current': 3006.287, 'min': 2600.0, 'max': 3100.0}, {'current': 3006.001, 'min': 2600.0, 'max': 3100.0}, {'current': 3067.896, 'min': 2600.0, 'max': 3100.0}, {'current': 2957.283, 'min': 2600.0, 'max': 3100.0}, {'current': 2983.082, 'min': 2600.0, 'max': 3100.0}, {'current': 2979.394, 'min': 2600.0, 'max': 3100.0}, {'current': 2907.713, 'min': 2600.0, 'max': 3100.0}, {'current': 2960.102, 'min': 2600.0, 'max': 3100.0}, {'current': 2847.564, 'min': 2600.0, 'max': 3100.0}, {'current': 3017.497, 'min': 2600.0, 'max': 3100.0}, {'current': 2835.733, 'min': 2600.0, 'max': 3100.0}, {'current': 3100.0, 'min': 2600.0, 'max': 3100.0}, {'current': 3082.707, 'min': 2600.0, 'max': 3100.0}, {'current': 2775.399, 'min': 2600.0, 'max': 3100.0}, {'current': 2935.801, 'min': 2600.0, 'max': 3100.0}, {'current': 2948.124, 'min': 2600.0, 'max': 3100.0}, {'current': 3093.822, 'min': 2600.0, 'max': 3100.0}, {'current': 3004.814, 'min': 2600.0, 'max': 3100.0}, {'current': 2923.882, 'min': 2600.0, 'max': 3100.0}, {'current': 2982.917, 'min': 2600.0, 'max': 3100.0}, {'current': 2981.574, 'min': 2600.0, 'max': 3100.0}, {'current': 2971.441, 'min': 2600.0, 'max': 3100.0}, {'current': 2967.662, 'min': 2600.0, 'max': 3100.0}, {'current': 3051.665, 'min': 2600.0, 'max': 3100.0}, {'current': 2983.315, 'min': 2600.0, 'max': 3100.0}, {'current': 2886.58, 'min': 2600.0, 'max': 3100.0}, {'current': 2926.473, 'min': 2600.0, 'max': 3100.0}, {'current': 2777.971, 'min': 2600.0, 'max': 3100.0}, {'current': 2784.114, 'min': 2600.0, 'max': 3100.0}, {'current': 3081.26, 'min': 2600.0, 'max': 3100.0}, {'current': 2705.436, 'min': 2600.0, 'max': 3100.0}, {'current': 3104.858, 'min': 2600.0, 'max': 3100.0}, {'current': 2810.594, 'min': 2600.0, 'max': 3100.0}, {'current': 2738.07, 'min': 2600.0, 'max': 3100.0}, {'current': 2793.578, 'min': 2600.0, 'max': 3100.0}, {'current': 2790.788, 'min': 2600.0, 'max': 3100.0}, {'current': 2780.705, 'min': 2600.0, 'max': 3100.0}, {'current': 2826.876, 'min': 2600.0, 'max': 3100.0}, {'current': 2930.205, 'min': 2600.0, 'max': 3100.0}, {'current': 3099.449, 'min': 2600.0, 'max': 3100.0}, {'current': 2706.297, 'min': 2600.0, 'max': 3100.0}, {'current': 2729.622, 'min': 2600.0, 'max': 3100.0}, {'current': 2738.808, 'min': 2600.0, 'max': 3100.0}, {'current': 3039.436, 'min': 2600.0, 'max': 3100.0}, {'current': 3075.121, 'min': 2600.0, 'max': 3100.0}, {'current': 2764.686, 'min': 2600.0, 'max': 3100.0}, {'current': 2752.604, 'min': 2600.0, 'max': 3100.0}, {'current': 2712.209, 'min': 2600.0, 'max': 3100.0}, {'current': 2764.686, 'min': 2600.0, 'max': 3100.0}, {'current': 2819.313, 'min': 2600.0, 'max': 3100.0}, {'current': 2691.485, 'min': 2600.0, 'max': 3100.0}, {'current': 2723.005, 'min': 2600.0, 'max': 3100.0}, {'current': 3099.811, 'min': 2600.0, 'max': 3100.0}, {'current': 2726.47, 'min': 2600.0, 'max': 3100.0}, {'current': 2800.704, 'min': 2600.0, 'max': 3100.0}, {'current': 2728.066, 'min': 2600.0, 'max': 3100.0}, {'current': 2769.801, 'min': 2600.0, 'max': 3100.0}, {'current': 2703.898, 'min': 2600.0, 'max': 3100.0}, {'current': 3027.519, 'min': 2600.0, 'max': 3100.0}, {'current': 2705.325, 'min': 2600.0, 'max': 3100.0}, {'current': 2708.477, 'min': 2600.0, 'max': 3100.0}, {'current': 2989.774, 'min': 2600.0, 'max': 3100.0}, {'current': 2908.111, 'min': 2600.0, 'max': 3100.0}, {'current': 3099.806, 'min': 2600.0, 'max': 3100.0}, {'current': 2820.333, 'min': 2600.0, 'max': 3100.0}, {'current': 3097.674, 'min': 2600.0, 'max': 3100.0}, {'current': 3094.046, 'min': 2600.0, 'max': 3100.0}, {'current': 2816.326, 'min': 2600.0, 'max': 3100.0}, {'current': 3100.0, 'min': 2600.0, 'max': 3100.0}, {'current': 2723.005, 'min': 2600.0, 'max': 3100.0}, {'current': 2698.192, 'min': 2600.0, 'max': 3100.0}, {'current': 2985.31, 'min': 2600.0, 'max': 3100.0}, {'current': 2901.702, 'min': 2600.0, 'max': 3100.0}, {'current': 2951.581, 'min': 2600.0, 'max': 3100.0}, {'current': 2804.202, 'min': 2600.0, 'max': 3100.0}], 'disk': {'/': {'total': 3519.7501831054688, 'used': 517.6411361694336}}, 'gpu': 'NVIDIA H800', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA H800', 'memory_total': 85520809984}, {'name': 'NVIDIA H800', 'memory_total': 85520809984}, {'name': 'NVIDIA H800', 'memory_total': 85520809984}, {'name': 'NVIDIA H800', 'memory_total': 85520809984}, {'name': 'NVIDIA H800', 'memory_total': 85520809984}, {'name': 'NVIDIA H800', 'memory_total': 85520809984}, {'name': 'NVIDIA H800', 'memory_total': 85520809984}, {'name': 'NVIDIA H800', 'memory_total': 85520809984}], 'memory': {'total': 2015.0098037719727}}
+2024-10-18 11:19:37,444 INFO    HandlerThread:249937 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-18 11:19:37,444 INFO    HandlerThread:249937 [system_monitor.py:probe():227] Publishing system info
+2024-10-18 11:19:37,445 DEBUG   HandlerThread:249937 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-10-18 11:19:37,962 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/conda-environment.yaml
+2024-10-18 11:19:39,962 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/conda-environment.yaml
+2024-10-18 11:19:40,016 DEBUG   HandlerThread:249937 [system_info.py:_save_conda():224] Saving conda packages done
+2024-10-18 11:19:40,018 INFO    HandlerThread:249937 [system_monitor.py:probe():229] Finished publishing system info
+2024-10-18 11:19:40,023 DEBUG   SenderThread:249937 [sender.py:send():379] send: files
+2024-10-18 11:19:40,023 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-10-18 11:19:40,083 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: python_packages
+2024-10-18 11:19:40,083 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: python_packages
+2024-10-18 11:19:40,084 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:19:40,084 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:19:40,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:40,962 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-metadata.json
+2024-10-18 11:19:40,962 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/requirements.txt
+2024-10-18 11:19:40,987 DEBUG   SenderThread:249937 [sender.py:send():379] send: telemetry
+2024-10-18 11:19:40,987 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:19:40,987 DEBUG   SenderThread:249937 [sender.py:send():379] send: config
+2024-10-18 11:19:40,988 DEBUG   SenderThread:249937 [sender.py:send():379] send: telemetry
+2024-10-18 11:19:40,988 DEBUG   SenderThread:249937 [sender.py:send():379] send: metric
+2024-10-18 11:19:40,988 DEBUG   SenderThread:249937 [sender.py:send():379] send: telemetry
+2024-10-18 11:19:40,988 DEBUG   SenderThread:249937 [sender.py:send():379] send: metric
+2024-10-18 11:19:40,988 WARNING SenderThread:249937 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-10-18 11:19:40,988 DEBUG   SenderThread:249937 [sender.py:send():379] send: telemetry
+2024-10-18 11:19:40,988 DEBUG   SenderThread:249937 [sender.py:send():379] send: telemetry
+2024-10-18 11:19:40,988 DEBUG   SenderThread:249937 [sender.py:send():379] send: config
+2024-10-18 11:19:41,084 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:41,787 INFO    wandb-upload_0:249937 [upload_job.py:push():130] Uploaded file /tmp/tmpmvlf70newandb/wir0xn4r-wandb-metadata.json
+2024-10-18 11:19:41,962 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:19:42,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:43,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:43,963 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:19:44,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:45,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:45,964 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:19:46,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:19:46,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:47,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:47,964 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:19:48,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:49,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:50,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:51,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:19:51,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:52,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:53,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:54,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:55,084 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:19:55,084 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:19:55,124 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:56,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:56,416 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:19:57,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:58,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:19:59,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:00,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:01,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:01,511 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:01,551 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:20:01,552 DEBUG   SenderThread:249937 [sender.py:send():379] send: metric
+2024-10-18 11:20:01,553 DEBUG   SenderThread:249937 [sender.py:send():379] send: metric
+2024-10-18 11:20:01,553 DEBUG   SenderThread:249937 [sender.py:send():379] send: metric
+2024-10-18 11:20:01,553 DEBUG   SenderThread:249937 [sender.py:send():379] send: metric
+2024-10-18 11:20:01,553 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:20:01,553 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:20:01,554 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:20:01,970 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_created():271] file/dir created: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:20:02,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:03,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:03,971 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:20:04,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:05,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:06,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:07,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:07,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:07,973 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/config.yaml
+2024-10-18 11:20:08,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:09,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:10,084 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:20:10,084 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:20:10,124 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:11,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:12,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:13,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:13,508 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:14,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:15,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:16,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:17,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:17,815 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:20:17,816 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:20:17,816 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:20:17,818 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:20:17,977 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:20:18,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:18,819 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:19,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:19,978 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:20:20,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:21,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:22,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:23,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:24,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:24,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:25,084 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:20:25,085 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:20:25,125 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:26,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:27,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:28,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:29,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:29,447 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:30,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:31,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:32,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:33,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:33,533 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:20:33,534 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:20:33,534 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:20:33,535 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:20:33,985 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:20:33,985 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:20:34,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:34,536 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:35,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:35,986 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:20:36,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:37,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:37,378 DEBUG   SystemMonitor:249937 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-10-18 11:20:37,381 DEBUG   SenderThread:249937 [sender.py:send():379] send: stats
+2024-10-18 11:20:38,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:39,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:40,084 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:20:40,085 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:20:40,125 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:40,501 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:41,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:42,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:43,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:44,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:45,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:46,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:46,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:47,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:48,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:49,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:49,373 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:20:49,374 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:20:49,374 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:20:49,375 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:20:49,992 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:20:49,993 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:20:50,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:51,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:51,993 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:20:52,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:52,091 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:53,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:54,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:55,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:20:55,085 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:20:55,125 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:56,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:57,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:57,488 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:20:58,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:20:59,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:00,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:01,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:02,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:03,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:03,092 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:04,093 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:05,093 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:05,891 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:21:05,892 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:21:05,892 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:21:05,892 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:21:06,000 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:21:06,093 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:07,093 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:07,382 DEBUG   SenderThread:249937 [sender.py:send():379] send: stats
+2024-10-18 11:21:08,001 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:21:08,093 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:08,383 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:09,093 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:10,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:21:10,085 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:21:10,125 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:11,093 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:12,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:13,093 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:13,490 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:14,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:15,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:16,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:17,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:18,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:19,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:19,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:20,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:20,558 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:21:20,559 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:21:20,559 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:21:20,560 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:21:21,006 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:21:21,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:22,006 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:21:22,094 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:23,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:24,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:24,562 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:25,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:21:25,085 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:21:25,125 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:26,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:27,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:28,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:29,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:30,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:30,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:31,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:32,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:33,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:34,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:35,095 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:36,087 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:36,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:36,531 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:21:36,532 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:21:36,533 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:21:36,533 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:21:37,013 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:21:37,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:37,384 DEBUG   SenderThread:249937 [sender.py:send():379] send: stats
+2024-10-18 11:21:38,014 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:21:38,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:39,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:40,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:21:40,085 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:21:40,125 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:41,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:41,437 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:42,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:43,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:44,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:45,096 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:46,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:47,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:47,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:48,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:49,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:50,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:51,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:51,592 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:21:51,593 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:21:51,594 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:21:51,594 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:21:52,020 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:21:52,020 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:21:52,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:52,594 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:53,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:54,021 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:21:54,097 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:55,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:21:55,085 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:21:55,125 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:56,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:57,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:58,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:21:58,444 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:21:59,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:00,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:01,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:02,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:03,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:04,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:04,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:05,098 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:06,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:07,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:07,386 DEBUG   SenderThread:249937 [sender.py:send():379] send: stats
+2024-10-18 11:22:07,533 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:22:07,534 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:22:07,534 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:22:07,535 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:22:08,028 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:22:08,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:09,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:09,536 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:10,029 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:22:10,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:22:10,085 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:22:10,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:11,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:12,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:13,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:14,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:15,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:15,099 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:16,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:17,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:18,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:19,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:20,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:21,088 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:21,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:22,006 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:22:22,007 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:22:22,007 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:22:22,008 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:22:22,032 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:22:22,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:23,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:24,035 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:22:24,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:25,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:22:25,086 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:22:25,126 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:26,100 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:26,414 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:27,101 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:28,101 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:29,101 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:30,101 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:31,101 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:32,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:32,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:33,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:34,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:35,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:36,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:37,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:37,191 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:22:37,192 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:22:37,192 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:22:37,193 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:37,193 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:22:37,387 DEBUG   SenderThread:249937 [sender.py:send():379] send: stats
+2024-10-18 11:22:38,041 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:22:38,042 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:22:38,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:39,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:40,042 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:22:40,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:22:40,086 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:22:40,127 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:41,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:42,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:42,465 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:43,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:44,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:45,102 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:46,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:47,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:48,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:48,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:49,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:50,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:51,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:52,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:52,639 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:22:52,640 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:22:52,640 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:22:52,641 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:22:53,048 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:22:53,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:53,642 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:22:54,048 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:22:54,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:55,085 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:22:55,086 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:22:55,103 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:56,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:57,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:58,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:59,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:22:59,452 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:23:00,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:01,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:02,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:03,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:04,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:05,089 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:23:05,104 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:06,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:07,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:07,390 DEBUG   SenderThread:249937 [sender.py:send():379] send: stats
+2024-10-18 11:23:08,014 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:23:08,015 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:23:08,016 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:23:08,016 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:23:08,055 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:23:08,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:09,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:10,055 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:23:10,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:23:10,086 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:23:10,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:10,488 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:23:11,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:12,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:13,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:14,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:15,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:16,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:23:16,105 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:17,106 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:18,106 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:19,106 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:20,107 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:21,090 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:23:21,106 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:22,106 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:23,106 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:23,178 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: partial_history
+2024-10-18 11:23:23,179 DEBUG   SenderThread:249937 [sender.py:send():379] send: history
+2024-10-18 11:23:23,180 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: summary_record
+2024-10-18 11:23:23,181 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:23:24,061 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:23:24,062 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:23:24,107 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:25,086 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-18 11:23:25,086 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: stop_status
+2024-10-18 11:23:25,106 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:26,107 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:26,477 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:23:27,107 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:28,107 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:28,549 DEBUG   SenderThread:249937 [sender.py:send():379] send: exit
+2024-10-18 11:23:28,549 INFO    SenderThread:249937 [sender.py:send_exit():586] handling exit code: 255
+2024-10-18 11:23:28,550 INFO    SenderThread:249937 [sender.py:send_exit():588] handling runtime: 231
+2024-10-18 11:23:28,550 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:23:28,550 INFO    SenderThread:249937 [sender.py:send_exit():594] send defer
+2024-10-18 11:23:28,550 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:28,550 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 0
+2024-10-18 11:23:28,551 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:28,551 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-10-18 11:23:28,551 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 1
+2024-10-18 11:23:28,551 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:28,551 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 1
+2024-10-18 11:23:28,551 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:28,551 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-10-18 11:23:28,551 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 2
+2024-10-18 11:23:28,551 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:28,551 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 2
+2024-10-18 11:23:28,551 INFO    HandlerThread:249937 [system_monitor.py:finish():203] Stopping system monitor
+2024-10-18 11:23:28,551 DEBUG   SystemMonitor:249937 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-10-18 11:23:28,552 DEBUG   SystemMonitor:249937 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-10-18 11:23:28,552 INFO    HandlerThread:249937 [interfaces.py:finish():200] Joined cpu monitor
+2024-10-18 11:23:28,554 INFO    HandlerThread:249937 [interfaces.py:finish():200] Joined disk monitor
+2024-10-18 11:23:28,799 INFO    HandlerThread:249937 [interfaces.py:finish():200] Joined gpu monitor
+2024-10-18 11:23:28,799 INFO    HandlerThread:249937 [interfaces.py:finish():200] Joined memory monitor
+2024-10-18 11:23:28,800 INFO    HandlerThread:249937 [interfaces.py:finish():200] Joined network monitor
+2024-10-18 11:23:28,800 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:28,800 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-10-18 11:23:28,800 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 3
+2024-10-18 11:23:28,800 DEBUG   SenderThread:249937 [sender.py:send():379] send: stats
+2024-10-18 11:23:28,801 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:28,801 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 3
+2024-10-18 11:23:28,801 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:28,801 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-10-18 11:23:28,801 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 4
+2024-10-18 11:23:28,801 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:28,801 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 4
+2024-10-18 11:23:28,802 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:28,802 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-10-18 11:23:28,802 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 5
+2024-10-18 11:23:28,802 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:28,802 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 5
+2024-10-18 11:23:28,802 DEBUG   SenderThread:249937 [sender.py:send():379] send: summary
+2024-10-18 11:23:28,802 INFO    SenderThread:249937 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-18 11:23:28,803 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:28,803 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-10-18 11:23:28,803 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 6
+2024-10-18 11:23:28,803 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:28,803 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 6
+2024-10-18 11:23:28,803 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:28,803 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-10-18 11:23:28,803 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 7
+2024-10-18 11:23:28,803 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 11:23:28,803 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:28,803 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 7
+2024-10-18 11:23:28,803 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:28,803 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-10-18 11:23:29,063 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:23:29,549 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-18 11:23:29,779 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 8
+2024-10-18 11:23:29,779 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: poll_exit
+2024-10-18 11:23:29,779 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:29,779 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 8
+2024-10-18 11:23:29,780 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:29,780 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-10-18 11:23:29,780 INFO    SenderThread:249937 [job_builder.py:build():440] Attempting to build job artifact
+2024-10-18 11:23:29,781 INFO    SenderThread:249937 [job_builder.py:_get_source_type():580] no source found
+2024-10-18 11:23:29,781 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 9
+2024-10-18 11:23:29,781 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:29,782 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 9
+2024-10-18 11:23:29,782 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:29,782 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-10-18 11:23:29,782 INFO    SenderThread:249937 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-10-18 11:23:30,064 INFO    Thread-12 :249937 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:23:30,064 INFO    SenderThread:249937 [dir_watcher.py:finish():388] scan: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files
+2024-10-18 11:23:30,064 INFO    SenderThread:249937 [dir_watcher.py:finish():402] scan save: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/conda-environment.yaml conda-environment.yaml
+2024-10-18 11:23:30,065 INFO    SenderThread:249937 [dir_watcher.py:finish():402] scan save: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-metadata.json wandb-metadata.json
+2024-10-18 11:23:30,065 INFO    SenderThread:249937 [dir_watcher.py:finish():402] scan save: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/config.yaml config.yaml
+2024-10-18 11:23:30,065 INFO    SenderThread:249937 [dir_watcher.py:finish():402] scan save: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/requirements.txt requirements.txt
+2024-10-18 11:23:30,069 INFO    SenderThread:249937 [dir_watcher.py:finish():402] scan save: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json wandb-summary.json
+2024-10-18 11:23:30,069 INFO    SenderThread:249937 [dir_watcher.py:finish():402] scan save: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log output.log
+2024-10-18 11:23:30,069 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 10
+2024-10-18 11:23:30,069 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:30,071 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 10
+2024-10-18 11:23:30,071 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:30,072 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-10-18 11:23:30,073 INFO    SenderThread:249937 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-18 11:23:30,550 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-18 11:23:30,550 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: poll_exit
+2024-10-18 11:23:30,789 INFO    wandb-upload_0:249937 [upload_job.py:push():130] Uploaded file /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/config.yaml
+2024-10-18 11:23:31,279 INFO    wandb-upload_4:249937 [upload_job.py:push():130] Uploaded file /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/output.log
+2024-10-18 11:23:31,367 INFO    wandb-upload_1:249937 [upload_job.py:push():130] Uploaded file /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/conda-environment.yaml
+2024-10-18 11:23:31,550 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-18 11:23:31,551 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: poll_exit
+2024-10-18 11:23:31,900 INFO    wandb-upload_2:249937 [upload_job.py:push():130] Uploaded file /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/requirements.txt
+2024-10-18 11:23:31,929 INFO    wandb-upload_3:249937 [upload_job.py:push():130] Uploaded file /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/files/wandb-summary.json
+2024-10-18 11:23:32,129 INFO    Thread-11 (_thread_body):249937 [sender.py:transition_state():614] send defer: 11
+2024-10-18 11:23:32,130 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:32,130 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 11
+2024-10-18 11:23:32,130 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:32,130 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-10-18 11:23:32,130 INFO    SenderThread:249937 [file_pusher.py:join():175] waiting for file pusher
+2024-10-18 11:23:32,131 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 12
+2024-10-18 11:23:32,131 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:32,131 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 12
+2024-10-18 11:23:32,131 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:32,131 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-10-18 11:23:32,131 INFO    SenderThread:249937 [file_stream.py:finish():601] file stream finish called
+2024-10-18 11:23:32,460 INFO    SenderThread:249937 [file_stream.py:finish():605] file stream finish is done
+2024-10-18 11:23:32,460 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 13
+2024-10-18 11:23:32,461 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:32,461 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 13
+2024-10-18 11:23:32,461 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:32,461 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-10-18 11:23:32,461 INFO    SenderThread:249937 [sender.py:transition_state():614] send defer: 14
+2024-10-18 11:23:32,461 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: defer
+2024-10-18 11:23:32,461 INFO    HandlerThread:249937 [handler.py:handle_request_defer():184] handle defer: 14
+2024-10-18 11:23:32,461 DEBUG   SenderThread:249937 [sender.py:send():379] send: final
+2024-10-18 11:23:32,462 DEBUG   SenderThread:249937 [sender.py:send():379] send: footer
+2024-10-18 11:23:32,462 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: defer
+2024-10-18 11:23:32,462 INFO    SenderThread:249937 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-10-18 11:23:32,462 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-18 11:23:32,462 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: poll_exit
+2024-10-18 11:23:32,463 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: server_info
+2024-10-18 11:23:32,463 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-18 11:23:32,463 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: server_info
+2024-10-18 11:23:32,464 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: get_summary
+2024-10-18 11:23:32,465 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: sampled_history
+2024-10-18 11:23:32,465 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-18 11:23:32,829 DEBUG   SenderThread:249937 [sender.py:send_request():406] send_request: poll_exit
+2024-10-18 11:23:32,830 INFO    MainThread:249937 [wandb_run.py:_footer_history_summary_info():4016] rendering history
+2024-10-18 11:23:32,831 INFO    MainThread:249937 [wandb_run.py:_footer_history_summary_info():4048] rendering summary
+2024-10-18 11:23:32,831 INFO    MainThread:249937 [wandb_run.py:_footer_sync_info():3975] logging synced files
+2024-10-18 11:23:32,831 DEBUG   HandlerThread:249937 [handler.py:handle_request():158] handle_request: shutdown
+2024-10-18 11:23:32,831 INFO    HandlerThread:249937 [handler.py:finish():882] shutting down handler
+2024-10-18 11:23:33,463 INFO    WriterThread:249937 [datastore.py:close():296] close: /cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/wandb/run-20241018_111935-yt1cg4c2/run-yt1cg4c2.wandb
+2024-10-18 11:23:33,830 INFO    SenderThread:249937 [sender.py:finish():1615] shutting down sender
+2024-10-18 11:23:33,830 INFO    SenderThread:249937 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-18 11:23:33,830 INFO    SenderThread:249937 [file_pusher.py:join():175] waiting for file pusher

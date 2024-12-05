@@ -15,7 +15,7 @@ The graphic below provides an overview of VersaTune. Check out the [paper](https
 To get started, please clone the repo and install it:
 ```bash
 git clone git@github.com:8023looker/VersaTune.git
-
+pip install -r requirement.txt
 ```
 <!-- conda create -n datasculpt python=3.10
 conda activate datasculpt
@@ -72,7 +72,8 @@ bash run_datasculpt_pipeline.sh 16000 0.5 0.5 5 # context_window delta epsilon i
 
 #### Flexible Domain Expansion
 
-![Results of domain expansion.](figures/VersaTune_VLDB2025_11.png)
+<!-- <img src="figures/VersaTune_VLDB2025_11.png" alt="My Image" class="image-with-title"> -->
+![Results of domain expansion.](figures/VersaTune_VLDB2025_11.svg)
 
 
 ## Citation <img src="figures/citation.svg" width="20">

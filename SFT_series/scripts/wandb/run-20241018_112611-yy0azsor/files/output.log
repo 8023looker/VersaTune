@@ -1,0 +1,15 @@
+
+  0%|                                                  | 0/1800 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+  0%|                                       | 1/1800 [00:21<10:48:52, 21.64s/it]
+
+  0%|                                        | 2/1800 [00:36<8:40:42, 17.38s/it]
+
+  0%|                                        | 3/1800 [00:50<7:59:42, 16.02s/it]
+{'loss': 2.243, 'grad_norm': 8.283208847045898, 'learning_rate': 1.111111111111111e-06, 'epoch': 0.17}
+
+  0%|                                        | 4/1800 [01:05<7:49:08, 15.67s/it]
+

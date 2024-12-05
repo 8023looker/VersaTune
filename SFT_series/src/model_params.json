@@ -1,0 +1,11 @@
+{
+    "domain_weight": {
+        "law": 0.04,
+        "medical": 0.09,
+        "finance": 0.07,
+        "science": 0.06,
+        "code": 0.18,
+        "other": 0.56
+    },
+    "model_path": "../output/topic_ratio_constant_llama-13b/"
+}

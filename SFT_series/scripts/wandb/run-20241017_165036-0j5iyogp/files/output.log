@@ -1,0 +1,285 @@
+  0%|                                                  | 0/1800 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+  0%|                                        | 1/1800 [00:08<4:02:27,  8.09s/it]
+{'loss': 2.309, 'grad_norm': 9.792607307434082, 'learning_rate': 3.7037037037037036e-07, 'epoch': 0.06}
+
+
+  0%|                                        | 3/1800 [00:18<2:53:23,  5.79s/it]
+{'loss': 2.3229, 'grad_norm': 9.363362312316895, 'learning_rate': 1.111111111111111e-06, 'epoch': 0.17}
+
+  0%|                                        | 4/1800 [00:23<2:45:33,  5.53s/it]
+
+
+  0%|▏                                       | 6/1800 [00:33<2:38:17,  5.29s/it]
+{'loss': 2.1183, 'grad_norm': 5.989931106567383, 'learning_rate': 2.222222222222222e-06, 'epoch': 0.33}
+
+
+  0%|▏                                       | 8/1800 [00:43<2:34:42,  5.18s/it]
+{'loss': 2.0032, 'grad_norm': 3.6851139068603516, 'learning_rate': 2.962962962962963e-06, 'epoch': 0.44}
+
+
+  1%|▏                                      | 10/1800 [00:54<2:34:59,  5.20s/it]
+{'loss': 1.8833, 'grad_norm': 2.7733774185180664, 'learning_rate': 3.7037037037037037e-06, 'epoch': 0.55}
+
+
+  1%|▎                                      | 12/1800 [01:04<2:33:01,  5.13s/it]
+{'loss': 1.8302, 'grad_norm': 2.330820322036743, 'learning_rate': 4.444444444444444e-06, 'epoch': 0.66}
+
+
+  1%|▎                                      | 14/1800 [01:14<2:34:31,  5.19s/it]
+
+  1%|▎                                      | 15/1800 [01:20<2:34:18,  5.19s/it]
+{'loss': 1.7137, 'grad_norm': 1.8091727495193481, 'learning_rate': 5.555555555555557e-06, 'epoch': 0.83}
+
+
+  1%|▎                                      | 17/1800 [01:30<2:33:07,  5.15s/it]
+{'loss': 1.6661, 'grad_norm': 1.687954306602478, 'learning_rate': 6.296296296296297e-06, 'epoch': 0.94}
+
+  1%|▍                                      | 18/1800 [01:35<2:32:52,  5.15s/it]
+
+  1%|▍                                      | 19/1800 [01:40<2:32:52,  5.15s/it]
+
+  1%|▍                                      | 20/1800 [01:45<2:31:37,  5.11s/it]
+
+
+  1%|▍                                      | 22/1800 [01:56<2:32:07,  5.13s/it]
+{'loss': 1.4904, 'grad_norm': 1.2864080667495728, 'learning_rate': 8.148148148148148e-06, 'epoch': 1.22}
+
+
+  1%|▌                                      | 24/1800 [02:06<2:31:32,  5.12s/it]
+{'loss': 1.5025, 'grad_norm': 1.246959924697876, 'learning_rate': 8.888888888888888e-06, 'epoch': 1.33}
+
+
+  1%|▌                                      | 26/1800 [02:16<2:31:36,  5.13s/it]
+{'loss': 1.4859, 'grad_norm': 1.2005704641342163, 'learning_rate': 9.62962962962963e-06, 'epoch': 1.44}
+
+  2%|▌                                      | 27/1800 [02:21<2:31:46,  5.14s/it]
+
+  2%|▌                                      | 28/1800 [02:26<2:32:19,  5.16s/it]
+
+  2%|▋                                      | 29/1800 [02:32<2:32:40,  5.17s/it]
+
+
+  2%|▋                                      | 31/1800 [02:42<2:31:27,  5.14s/it]
+{'loss': 1.4315, 'grad_norm': 1.1681063175201416, 'learning_rate': 1.1481481481481482e-05, 'epoch': 1.72}
+
+  2%|▋                                      | 32/1800 [02:47<2:32:12,  5.17s/it]
+
+  2%|▋                                      | 33/1800 [02:52<2:31:30,  5.14s/it]
+
+  2%|▋                                      | 34/1800 [02:57<2:30:49,  5.12s/it]
+
+  2%|▊                                      | 35/1800 [03:02<2:30:26,  5.11s/it]
+
+  2%|▊                                      | 36/1800 [03:07<2:30:18,  5.11s/it]
+
+  2%|▊                                      | 37/1800 [03:12<2:30:02,  5.11s/it]
+
+  2%|▊                                      | 38/1800 [03:18<2:30:09,  5.11s/it]
+
+  2%|▊                                      | 39/1800 [03:23<2:29:56,  5.11s/it]
+
+  2%|▊                                      | 40/1800 [03:28<2:29:32,  5.10s/it]
+
+
+  2%|▉                                      | 42/1800 [03:38<2:29:53,  5.12s/it]
+{'loss': 1.2534, 'grad_norm': 1.0545343160629272, 'learning_rate': 1.555555555555556e-05, 'epoch': 2.33}
+
+  2%|▉                                      | 43/1800 [03:43<2:29:32,  5.11s/it]
+
+  2%|▉                                      | 44/1800 [03:48<2:29:31,  5.11s/it]
+
+  2%|▉                                      | 45/1800 [03:53<2:29:45,  5.12s/it]
+
+  3%|▉                                      | 46/1800 [03:59<2:29:52,  5.13s/it]
+
+  3%|█                                      | 47/1800 [04:04<2:29:32,  5.12s/it]
+
+
+  3%|█                                      | 49/1800 [04:14<2:30:54,  5.17s/it]
+{'loss': 1.2229, 'grad_norm': 1.0866241455078125, 'learning_rate': 1.814814814814815e-05, 'epoch': 2.71}
+
+
+  3%|█                                      | 51/1800 [04:24<2:29:17,  5.12s/it]
+{'loss': 1.2145, 'grad_norm': 1.2059361934661865, 'learning_rate': 1.888888888888889e-05, 'epoch': 2.82}
+
+  3%|█▏                                     | 52/1800 [04:29<2:29:31,  5.13s/it]
+
+  3%|█▏                                     | 53/1800 [04:34<2:29:15,  5.13s/it]
+
+  3%|█▏                                     | 54/1800 [04:40<2:28:56,  5.12s/it]
+
+  3%|█▏                                     | 55/1800 [04:45<2:28:38,  5.11s/it]
+
+  3%|█▏                                     | 56/1800 [04:50<2:28:52,  5.12s/it]
+
+
+  3%|█▎                                     | 58/1800 [05:00<2:27:34,  5.08s/it]
+{'loss': 1.0607, 'grad_norm': 1.5276949405670166, 'learning_rate': 1.9999741000229695e-05, 'epoch': 3.21}
+
+
+  3%|█▎                                     | 60/1800 [05:10<2:27:51,  5.10s/it]
+{'loss': 1.0556, 'grad_norm': 1.3605090379714966, 'learning_rate': 1.9999417253661235e-05, 'epoch': 3.32}
+
+  3%|█▎                                     | 61/1800 [05:15<2:28:05,  5.11s/it]
+
+  3%|█▎                                     | 62/1800 [05:20<2:28:25,  5.12s/it]
+
+  4%|█▎                                     | 63/1800 [05:26<2:28:37,  5.13s/it]
+
+
+  4%|█▍                                     | 65/1800 [05:36<2:29:51,  5.18s/it]
+{'loss': 0.9873, 'grad_norm': 1.4905956983566284, 'learning_rate': 1.9998041369722556e-05, 'epoch': 3.6}
+
+  4%|█▍                                     | 66/1800 [05:41<2:30:14,  5.20s/it]
+
+  4%|█▍                                     | 67/1800 [05:47<2:30:27,  5.21s/it]
+
+  4%|█▍                                     | 68/1800 [05:52<2:30:15,  5.21s/it]
+
+
+  4%|█▌                                     | 70/1800 [06:02<2:29:59,  5.20s/it]
+{'loss': 1.0044, 'grad_norm': 1.2742112874984741, 'learning_rate': 1.999585627199305e-05, 'epoch': 3.88}
+
+
+  4%|█▌                                     | 72/1800 [06:12<2:27:57,  5.14s/it]
+{'loss': 0.9718, 'grad_norm': 1.2817193269729614, 'learning_rate': 1.9994755690455154e-05, 'epoch': 3.99}
+
+  4%|█▌                                     | 73/1800 [06:17<2:27:22,  5.12s/it]
+
+  4%|█▌                                     | 74/1800 [06:23<2:27:22,  5.12s/it]
+
+  4%|█▋                                     | 75/1800 [06:28<2:26:31,  5.10s/it]
+
+  4%|█▋                                     | 76/1800 [06:33<2:25:52,  5.08s/it]
+
+  4%|█▋                                     | 77/1800 [06:38<2:25:39,  5.07s/it]
+
+  4%|█▋                                     | 78/1800 [06:43<2:25:41,  5.08s/it]
+
+  4%|█▋                                     | 79/1800 [06:48<2:25:24,  5.07s/it]
+
+  4%|█▋                                     | 80/1800 [06:53<2:25:35,  5.08s/it]
+
+  4%|█▊                                     | 81/1800 [06:58<2:25:55,  5.09s/it]
+
+
+  5%|█▊                                     | 83/1800 [07:08<2:26:42,  5.13s/it]
+{'loss': 0.7124, 'grad_norm': 1.4666905403137207, 'learning_rate': 1.9986389354422823e-05, 'epoch': 4.6}
+
+  5%|█▊                                     | 84/1800 [07:14<2:27:14,  5.15s/it]
+
+  5%|█▊                                     | 85/1800 [07:19<2:26:55,  5.14s/it]
+
+  5%|█▊                                     | 86/1800 [07:24<2:26:34,  5.13s/it]
+
+  5%|█▉                                     | 87/1800 [07:29<2:26:08,  5.12s/it]
+
+  5%|█▉                                     | 88/1800 [07:34<2:26:31,  5.14s/it]
+
+
+  5%|█▉                                     | 90/1800 [07:44<2:26:00,  5.12s/it]
+{'loss': 0.719, 'grad_norm': 1.417693853378296, 'learning_rate': 1.997902826237712e-05, 'epoch': 4.98}
+
+  5%|█▉                                     | 91/1800 [07:49<2:26:26,  5.14s/it]
+
+  5%|█▉                                     | 92/1800 [07:55<2:25:56,  5.13s/it]
+
+  5%|██                                     | 93/1800 [08:00<2:25:44,  5.12s/it]
+
+  5%|██                                     | 94/1800 [08:05<2:25:33,  5.12s/it]
+
+  5%|██                                     | 95/1800 [08:10<2:25:19,  5.11s/it]
+
+
+  5%|██                                     | 97/1800 [08:20<2:25:47,  5.14s/it]
+{'loss': 0.5051, 'grad_norm': 1.6752945184707642, 'learning_rate': 1.997008413773343e-05, 'epoch': 5.37}
+
+  5%|██                                     | 98/1800 [08:25<2:26:00,  5.15s/it]
+
+  6%|██▏                                    | 99/1800 [08:31<2:26:04,  5.15s/it]
+
+  6%|██                                    | 100/1800 [08:36<2:25:38,  5.14s/it]
+
+  6%|██▏                                   | 101/1800 [08:41<2:25:57,  5.15s/it]
+
+  6%|██▏                                   | 102/1800 [08:46<2:25:32,  5.14s/it]
+
+  6%|██▏                                   | 103/1800 [08:51<2:25:14,  5.14s/it]
+
+  6%|██▏                                   | 104/1800 [08:56<2:24:53,  5.13s/it]
+
+
+  6%|██▏                                   | 106/1800 [09:06<2:23:47,  5.09s/it]
+{'loss': 0.4918, 'grad_norm': 1.6833300590515137, 'learning_rate': 1.9956260772448835e-05, 'epoch': 5.87}
+
+
+  6%|██▎                                   | 108/1800 [09:16<2:23:10,  5.08s/it]
+{'loss': 0.4645, 'grad_norm': 1.5576727390289307, 'learning_rate': 1.995283421166614e-05, 'epoch': 5.98}
+
+  6%|██▎                                   | 109/1800 [09:21<2:22:56,  5.07s/it]
+
+  6%|██▎                                   | 110/1800 [09:27<2:24:48,  5.14s/it]
+
+  6%|██▎                                   | 111/1800 [09:32<2:24:10,  5.12s/it]
+
+
+  6%|██▍                                   | 113/1800 [09:42<2:26:22,  5.21s/it]
+{'loss': 0.3054, 'grad_norm': 2.5784542560577393, 'learning_rate': 1.9943704019296316e-05, 'epoch': 6.26}
+
+  6%|██▍                                   | 114/1800 [09:48<2:25:12,  5.17s/it]
+
+  6%|██▍                                   | 115/1800 [09:53<2:25:01,  5.16s/it]
+
+  6%|██▍                                   | 116/1800 [09:58<2:24:02,  5.13s/it]
+
+  6%|██▍                                   | 117/1800 [10:03<2:23:46,  5.13s/it]
+
+  7%|██▍                                   | 118/1800 [10:08<2:23:15,  5.11s/it]
+
+  7%|██▌                                   | 119/1800 [10:13<2:22:50,  5.10s/it]
+
+  7%|██▌                                   | 120/1800 [10:18<2:22:43,  5.10s/it]
+  7%|██▌                                   | 121/1800 [10:23<2:22:15,  5.08s/it]Traceback (most recent call last):
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py", line 404, in <module>
+    train()
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py", line 398, in train
+    trainer.train()
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in train
+    return inner_training_loop(
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 2279, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 3349, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/accelerate/accelerator.py", line 2159, in backward
+    loss.backward(**kwargs)
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/autograd/__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/autograd/graph.py", line 768, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py", line 404, in <module>
+[rank0]:     train()
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py", line 398, in train
+[rank0]:     trainer.train()
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 2279, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs)
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 3349, in training_step
+[rank0]:     self.accelerator.backward(loss, **kwargs)
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/accelerate/accelerator.py", line 2159, in backward
+[rank0]:     loss.backward(**kwargs)
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/_tensor.py", line 521, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/autograd/__init__.py", line 289, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/autograd/graph.py", line 768, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]: KeyboardInterrupt

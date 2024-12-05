@@ -1,0 +1,11 @@
+{
+    "domain_weight": {
+        "law": 194,
+        "medical": 648,
+        "finance": 289,
+        "science": 748,
+        "code": 5552,
+        "other": 2558
+    },
+    "model_path": "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/model/llama-3-8B/"
+}

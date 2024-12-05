@@ -1,0 +1,73 @@
+
+  0%|                                                  | 0/1800 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+  0%|                                       | 1/1800 [00:21<10:42:08, 21.42s/it]
+
+  0%|                                        | 2/1800 [00:37<9:08:46, 18.31s/it]
+{'loss': 2.2984, 'grad_norm': 8.48110580444336, 'learning_rate': 7.407407407407407e-07, 'epoch': 0.11}
+
+  0%|                                        | 3/1800 [00:53<8:33:59, 17.16s/it]
+
+
+  0%|                                        | 5/1800 [01:25<8:14:28, 16.53s/it]
+
+  0%|▏                                       | 6/1800 [01:40<7:56:15, 15.93s/it]
+
+  0%|▏                                       | 7/1800 [01:56<7:56:41, 15.95s/it]
+{'loss': 1.9184, 'grad_norm': 3.567962169647217, 'learning_rate': 2.5925925925925925e-06, 'epoch': 0.39}
+
+
+  0%|▏                                       | 9/1800 [02:27<7:50:25, 15.76s/it]
+
+  1%|▏                                      | 10/1800 [02:41<7:38:29, 15.37s/it]
+{'loss': 1.7644, 'grad_norm': 2.374462842941284, 'learning_rate': 3.7037037037037037e-06, 'epoch': 0.55}
+
+
+  1%|▎                                      | 12/1800 [03:12<7:36:46, 15.33s/it]
+
+  1%|▎                                      | 13/1800 [03:27<7:36:40, 15.33s/it]
+
+  1%|▎                                      | 14/1800 [03:43<7:35:33, 15.30s/it]
+  1%|▎                                      | 14/1800 [03:43<7:35:33, 15.30s/it]Traceback (most recent call last):
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py", line 404, in <module>
+    train()
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py", line 398, in train
+    trainer.train()
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in train
+    return inner_training_loop(
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 2279, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 3349, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/accelerate/accelerator.py", line 2159, in backward
+    loss.backward(**kwargs)
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/autograd/__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/autograd/graph.py", line 768, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py", line 404, in <module>
+[rank0]:     train()
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/keerlu/CPT_params/SFT_series/scripts/../src/train_proxy_loss.py", line 398, in train
+[rank0]:     trainer.train()
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 2279, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs)
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/transformers/trainer.py", line 3349, in training_step
+[rank0]:     self.accelerator.backward(loss, **kwargs)
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/accelerate/accelerator.py", line 2159, in backward
+[rank0]:     loss.backward(**kwargs)
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/_tensor.py", line 521, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/autograd/__init__.py", line 289, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/cpfs/29f69eb5e2e60f26/user/sft_intern/anaconda3/envs/keerlu_sft/lib/python3.10/site-packages/torch/autograd/graph.py", line 768, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]: KeyboardInterrupt
