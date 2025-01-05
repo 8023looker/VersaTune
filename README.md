@@ -78,7 +78,7 @@ bash run_datasculpt_pipeline.sh 16000 0.5 0.5 5 # context_window delta epsilon i
 
 ## Citation <img src="figures/citation.svg" width="20">
 
-If this was useful to you, please cite the [paper](https://arxiv.org/abs/2409.00997):
+If this was useful to you, please cite the [paper](https://arxiv.org/abs/2411.11266):
 ```
 @misc{lu2024versatuneharnessingverticaldomain,
       title={VersaTune: An Efficient Data Composition Framework for Training Multi-Capability LLMs}, 
