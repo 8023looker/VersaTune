@@ -60,7 +60,7 @@ bash run_datasculpt_pipeline.sh 16000 0.5 0.5 5 # context_window delta epsilon i
 <!-- [Optional] To run DataSculpt on your own dataset, provide data as the [input](#input) format, refering to `./data_sample/input/part-00000`. -->
 
 
-## Experimental Results <img src="figures/dog_head.svg" width="20">
+## Experimental Results
 
 ### Phase1: Domain Knowledge Detection
 ![Results of domain detection.](figures/knowledge_detection_stacked_bar_chart.svg)
